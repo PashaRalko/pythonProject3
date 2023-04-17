@@ -17,7 +17,6 @@ class Tomato:
         self._index = index
         self._state = state
 
-
     def grow(self):
         if self._state != self.states[-1]:
             self._state = self.states[self.states.index(self._state) + 1]
@@ -28,13 +27,15 @@ class Tomato:
     def is_ripe(self):
         if self._state == self.states[-1]:
             print("Помидор созрел!")
+            return True
         else:
             print("Помидор не созрел!")
+            return False
 
 
 tomat = Tomato(0)
 print(tomat._state)
-#tomat.grow()
+# tomat.grow()
 
 
 """
@@ -52,18 +53,78 @@ print(tomat._state)
 class TomatoBush:
 
     def __init__(self, count):
-        self.tomatoes = [f"obj_{i}" for i in range(count)]
-        for i in self.tomatoes:
-            print(f"сейчас объект {i}")
-            i = Tomato(0)
+        self.tomatoes = [Tomato(i) for i in range(count)]
 
     def grow_all(self):
         for i in self.tomatoes:
-            print(f"сейчас объект {i}")
-            #i.grow()
+            i.grow()
+
+    def all_are_ripe(self):
+        list_of_True = list()
+        for i in self.tomatoes:
+            if i.is_ripe():
+                list_of_True.append(True)
+            else:
+                list_of_True.append(False)
+
+        if list_of_True.count(True) == len(self.tomatoes):
+            print("Все помидоры спелые!")
+            return True
+        else:
+            return False
+
+    def give_away_all(self):
+        if self.all_are_ripe() is True:
+            print("Сбор урожая!")
+            self.tomatoes = None
+        else:
+            print("Собирать урожай пока рано!")
 
 
 tom = TomatoBush(5)
 print(tom.tomatoes)
 tom.grow_all()
+tom.grow_all()
+tom.grow_all()
+tom.grow_all()
+print(tom.all_are_ripe())
+tom.give_away_all()
 
+"""
+Класс Gardener
+1. Ȅоздайте класс Gardener
+2. Ȅоздайте метод __init__(), внутри которого будут определены два динамических свойства: 1) name - 
+передается параметром, является публичным и 2) _plant - принимает объект класса Tomato, является 
+protected
+3. Ȅоздайте метод work(), который заставляет садовника работать, что позволяет растению становиться 
+более зрелым
+4. Ȅоздайте метод harvest(), который проверяет, все ли плоды созрели. Если все - садовник собирает урожай. 
+Если нет - метод печатает предупреждение.
+5. Ȅоздайте статический метод knowledge_base(), который выведет в консоль справку по садоводству.
+"""
+
+
+class Gardener:
+    def __init__(self, name, plant):
+        self.name = name
+        self._plant = plant
+
+    def work(self):
+        print("Опять работать...")
+        self._plant.grow_all()
+
+    def harvest(self):
+        self._plant.give_away_all()
+
+    @staticmethod
+    def knowledge_base(gard):
+        print(f"Имя садовника - {gard.name}")
+        print(f"Кол-во томатов - {gard._plant.tomatoes}")
+        print(f"Можно ли собирать урожай? {gard.harvest()}")
+
+
+obj_ = TomatoBush(5)
+gard = Gardener("Tom", obj_)
+gard.work()
+gard.harvest()
+gard.knowledge_base(gard)
