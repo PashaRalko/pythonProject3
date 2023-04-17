@@ -1,42 +1,27 @@
-class Calculator:
-    def __init__(self):
-        self.x = int(input("Введите число х: "))
-        self.y = int(input("Введите число y: "))
-        self.oper = input("Какая операция: ")
+class Human:
+    default_name = "Name"
+    default_age = 15
 
-    def sum_(self):
-        return self.x + self.y
+    def __init__(self, name=default_name, age=default_age):
+        self.name = name
+        self.age = age
+        self.__money = 0
+        self.__house = None
 
-    def minus(self):
-        return self.x - self.y
+    def info(self):
+        print(self.name, self.age, self.__house, self.__money)
 
-    def multy(self):
-        return self.x * self.y
+    @staticmethod
+    def default_info(self):
+        print(self.default_age, self.default_name)
 
-    def div(self):
-        try:
-            rez = self.x / self.y
-            return rez
-        except ZeroDivisionError:
-            print("Деление на 0")
-            main()
+    def earn_money(self, count):
+        self.__money += count
+        return self.__money
 
 
-def main():
-    calc_ = Calculator()
-
-    if calc_.oper == "+":
-        print(calc_.sum_())
-    elif calc_.oper == "-":
-        print(calc_.minus())
-    elif calc_.oper == "*":
-        print(calc_.multy())
-    elif calc_.oper == "/":
-        print(calc_.div())
-    else:
-        print("что-то пошло не так...")
-        main()
-
-
-if __name__ == "__main__":
-    main()
+ex = Human(13, "Hook")
+ex.info()
+Human.default_info(ex)
+print(ex.earn_money(15))
+ 
