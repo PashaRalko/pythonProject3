@@ -1,0 +1,117 @@
+executor.py [LINE:362] #INFO     [2023-05-05 21:53:43,165] Bot: let_me_start_bot [@sdfsdfasddsg_bot]
+dispatcher.py [LINE:358] #INFO     [2023-05-05 21:53:43,165] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-05-05 21:56:22,462] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-05-05 21:56:22,462] Goodbye!
+executor.py [LINE:362] #INFO     [2023-05-05 21:58:57,786] Bot: let_me_start_bot [@sdfsdfasddsg_bot]
+dispatcher.py [LINE:358] #INFO     [2023-05-05 21:58:57,786] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-05-05 21:59:42,189] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-05-05 21:59:42,189] Goodbye!
+executor.py [LINE:362] #INFO     [2023-05-05 21:59:47,578] Bot: let_me_start_bot [@sdfsdfasddsg_bot]
+dispatcher.py [LINE:358] #INFO     [2023-05-05 21:59:47,584] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-05-05 22:04:16,563] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-05-05 22:04:16,564] Goodbye!
+executor.py [LINE:362] #INFO     [2023-05-06 14:05:38,453] Bot: let_me_start_bot [@sdfsdfasddsg_bot]
+dispatcher.py [LINE:358] #INFO     [2023-05-06 14:05:38,453] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-05-06 14:06:43,089] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-05-06 14:06:43,089] Goodbye!
+executor.py [LINE:362] #INFO     [2023-05-06 14:06:45,068] Bot: let_me_start_bot [@sdfsdfasddsg_bot]
+dispatcher.py [LINE:358] #INFO     [2023-05-06 14:06:45,068] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-05-06 14:07:05,471] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-05-06 14:07:05,472] Goodbye!
+executor.py [LINE:362] #INFO     [2023-05-06 14:08:20,790] Bot: let_me_start_bot [@sdfsdfasddsg_bot]
+dispatcher.py [LINE:358] #INFO     [2023-05-06 14:08:20,790] Start polling.
+dispatcher.py [LINE:390] #ERROR    [2023-05-06 15:34:39,576] Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\par26\PycharmProjects\telegram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\par26\PycharmProjects\telegram_bot\venv\Lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\par26\PycharmProjects\telegram_bot\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\par26\PycharmProjects\telegram_bot\venv\Lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\par26\PycharmProjects\telegram_bot\venv\Lib\site-packages\aiohttp\client.py", line 1141, in __aenter__
+    self._resp = await self._coro
+                 ^^^^^^^^^^^^^^^^
+  File "C:\Users\par26\PycharmProjects\telegram_bot\venv\Lib\site-packages\aiohttp\client.py", line 560, in _request
+    await resp.start(conn)
+  File "C:\Users\par26\PycharmProjects\telegram_bot\venv\Lib\site-packages\aiohttp\client_reqrep.py", line 894, in start
+    with self._timer:
+  File "C:\Users\par26\PycharmProjects\telegram_bot\venv\Lib\site-packages\aiohttp\helpers.py", line 721, in __exit__
+    raise asyncio.TimeoutError from None
+TimeoutError
+executor.py [LINE:362] #INFO     [2023-05-09 17:08:27,639] Bot: let_me_start_bot [@sdfsdfasddsg_bot]
+dispatcher.py [LINE:358] #INFO     [2023-05-09 17:08:27,639] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-05-09 17:08:30,030] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-05-09 17:08:30,031] Goodbye!
+executor.py [LINE:362] #INFO     [2023-05-10 20:33:54,749] Bot: let_me_start_bot [@sdfsdfasddsg_bot]
+dispatcher.py [LINE:358] #INFO     [2023-05-10 20:33:54,751] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-05-10 20:35:07,833] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-05-10 20:35:07,833] Goodbye!
+executor.py [LINE:362] #INFO     [2023-05-10 20:35:08,804] Bot: let_me_start_bot [@sdfsdfasddsg_bot]
+dispatcher.py [LINE:358] #INFO     [2023-05-10 20:35:08,805] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-05-10 20:36:29,461] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-05-10 20:36:29,462] Goodbye!
+executor.py [LINE:362] #INFO     [2023-05-10 20:36:30,327] Bot: let_me_start_bot [@sdfsdfasddsg_bot]
+dispatcher.py [LINE:358] #INFO     [2023-05-10 20:36:30,327] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-05-10 20:38:14,200] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-05-10 20:38:14,200] Goodbye!
+executor.py [LINE:362] #INFO     [2023-05-10 20:38:15,005] Bot: let_me_start_bot [@sdfsdfasddsg_bot]
+dispatcher.py [LINE:358] #INFO     [2023-05-10 20:38:15,005] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-05-10 20:38:48,283] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-05-10 20:38:48,283] Goodbye!
+executor.py [LINE:362] #INFO     [2023-05-10 20:38:50,250] Bot: let_me_start_bot [@sdfsdfasddsg_bot]
+dispatcher.py [LINE:358] #INFO     [2023-05-10 20:38:50,251] Start polling.
+dispatcher.py [LINE:390] #ERROR    [2023-05-10 21:13:54,314] Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\par26\PycharmProjects\pythonProject3\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\par26\PycharmProjects\pythonProject3\venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\par26\PycharmProjects\pythonProject3\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\par26\PycharmProjects\pythonProject3\venv\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\par26\PycharmProjects\pythonProject3\venv\lib\site-packages\aiohttp\client.py", line 1141, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\par26\PycharmProjects\pythonProject3\venv\lib\site-packages\aiohttp\client.py", line 560, in _request
+    await resp.start(conn)
+  File "C:\Users\par26\PycharmProjects\pythonProject3\venv\lib\site-packages\aiohttp\client_reqrep.py", line 914, in start
+    self._continue = None
+  File "C:\Users\par26\PycharmProjects\pythonProject3\venv\lib\site-packages\aiohttp\helpers.py", line 721, in __exit__
+    raise asyncio.TimeoutError from None
+asyncio.exceptions.TimeoutError
+dispatcher.py [LINE:390] #ERROR    [2023-05-10 22:07:24,230] Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\par26\PycharmProjects\pythonProject3\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\par26\PycharmProjects\pythonProject3\venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\par26\PycharmProjects\pythonProject3\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\par26\PycharmProjects\pythonProject3\venv\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\par26\PycharmProjects\pythonProject3\venv\lib\site-packages\aiohttp\client.py", line 1141, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\par26\PycharmProjects\pythonProject3\venv\lib\site-packages\aiohttp\client.py", line 560, in _request
+    await resp.start(conn)
+  File "C:\Users\par26\PycharmProjects\pythonProject3\venv\lib\site-packages\aiohttp\client_reqrep.py", line 914, in start
+    self._continue = None
+  File "C:\Users\par26\PycharmProjects\pythonProject3\venv\lib\site-packages\aiohttp\helpers.py", line 721, in __exit__
+    raise asyncio.TimeoutError from None
+asyncio.exceptions.TimeoutError
+executor.py [LINE:362] #INFO     [2023-05-12 19:21:28,895] Bot: let_me_start_bot [@sdfsdfasddsg_bot]
+dispatcher.py [LINE:358] #INFO     [2023-05-12 19:21:28,895] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-05-12 19:21:49,354] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-05-12 19:21:49,355] Goodbye!
+executor.py [LINE:362] #INFO     [2023-05-12 19:23:28,574] Bot: let_me_start_bot [@sdfsdfasddsg_bot]
+dispatcher.py [LINE:358] #INFO     [2023-05-12 19:23:28,574] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-05-12 19:23:47,223] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-05-12 19:23:47,224] Goodbye!
+executor.py [LINE:362] #INFO     [2023-05-12 19:24:00,946] Bot: let_me_start_bot [@sdfsdfasddsg_bot]
+dispatcher.py [LINE:358] #INFO     [2023-05-12 19:24:00,946] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-05-12 19:24:15,995] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-05-12 19:24:15,995] Goodbye!
