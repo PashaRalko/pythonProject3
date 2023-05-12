@@ -1,27 +1,16 @@
-class Human:
-    default_name = "Name"
-    default_age = 15
+# This is a sample Python script.
 
-    def __init__(self, name=default_name, age=default_age):
-        self.name = name
-        self.age = age
-        self.__money = 0
-        self.__house = None
-
-    def info(self):
-        print(self.name, self.age, self.__house, self.__money)
-
-    @staticmethod
-    def default_info(self):
-        print(self.default_age, self.default_name)
-
-    def earn_money(self, count):
-        self.__money += count
-        return self.__money
+# Press Shift+F10 to execute it or replace it with your code.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-ex = Human(13, "Hook")
-ex.info()
-Human.default_info(ex)
-print(ex.earn_money(15))
- 
+def print_hi(name):
+    # Use a breakpoint in the code line below to debug your script.
+    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+
+
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    print_hi('PyCharm')
+
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
